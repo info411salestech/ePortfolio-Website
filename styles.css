@@ -1,0 +1,241 @@
+#html, body 
+	{
+ 	top: 0px;
+  	right: 0px;
+ 	bottom: 0px;
+ 	left: 0px;
+ 	width:750px;
+	height: 100%;
+ 	margin: auto;
+
+	}
+ 
+body 
+{
+ background-image:url('./img/blacktexture.jpg'); /*change this image for the background. or to make it a solid color, simply change this line to 'background-color: red;' without single quotes */
+background-attachment:fixed;
+background-position:center;
+}
+
+
+
+
+h1{Black;}
+.black{color:black;text-decoration: underline;}
+
+
+#header{
+    width:350px;
+	height:220px;
+	background-color: white;
+	background-repeat: no-repeat;
+	float:left;
+        }
+#left{background-color:white;
+    width:400px;
+    height:100px;
+    float:left;
+	padding-top:115px;
+	padding-bottom:5px;
+        }
+#right{background-color:white;
+	width:750px;
+	height:700px;
+	float:left;
+	word-wrap:break-word;
+        margin-bottom: 0px;
+	}
+#rightpersonal{background-color:white;
+	width:750px;
+	height:1300px;
+	float:left;
+	word-wrap:break-word;
+        margin-bottom: 0px;
+	}
+#rightcontact{background-color:white;
+	width:750px;
+	height:520px;
+	float:left;
+	word-wrap:break-word;
+        margin-bottom: 0px;
+	}
+#rightschool{background-color:white;
+	width:750px;
+	height:1500px;
+	float:left;
+	word-wrap:break-word;
+        margin-bottom: 0px;
+	}
+#rightint{background-color:white;
+	width:750px;
+	height:800px;
+	float:left;
+	word-wrap:break-word;
+        margin-bottom: 0px;
+	}
+#rightthank{background-color:white;
+	width:750px;
+	height:570px;
+	float:left;
+	word-wrap:break-word;
+        margin-bottom: 0px;
+	}
+div.cornersDown{
+        background: url(./img/cornersDown.png); /*change this image to display a dfferent picture on the bottom of the body */
+        background-color: transparent;
+        float:left;
+        content: "";
+        display: block;
+        width: 750px;
+        height: 45px;
+        margin-bottom: 70px;
+        }
+div.cornersUp{
+        background: url(./img/corners.png);/*change this image to display a dfferent picture on the top of the footer */
+        background-color: transparent;
+        content: "";
+        display: block;
+        width: 750px;
+        height: 45px;
+        }
+
+#footleft{
+	width:750px;
+	float:left;          
+        position:bottom;
+        bottom:0;
+        }
+
+#footleft p {
+        margin: 0;
+}
+#footleft p + p {
+       margin-top: 5px;
+}
+
+.footer {background: white; 
+padding: 0 10px;
+ font: 16px/22px normal "Courier New";
+}
+
+
+
+     
+      .slide-out-div {
+          padding: 20px;
+          width: 250px;
+          background: #939292;
+          border: 1px solid #000000;
+      }  
+                      
+
+
+/*start drop down code*/
+#sddm
+{	margin: 0;
+	padding: 0;
+	z-index: 30}
+
+#sddm li
+{	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	font: bold 11px arial}
+
+#sddm li a
+{	display: block;
+	margin: 0 1px 0 0;
+	padding: 4px 10px;
+	width: 60px;
+	background: #939292;
+	color: #FFF;
+	text-align: center;
+	text-decoration: none}
+
+#sddm li a:hover
+{	background: #000000}
+
+#sddm div
+{	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	background: #939292;
+	border: 1px solid #000000}
+
+	#sddm div a
+	{	position: relative;
+		display: block;
+		margin: 0;
+		padding: 5px 10px;
+		width: auto;
+		white-space: nowrap;
+		text-align: left;
+		text-decoration: none;
+		background: #939292;
+		color: #000000;
+		font: 11px arial}
+
+	#sddm div a:hover
+	{	background: #000000;
+		color: #FFF}
+/*end dropdown code*/
+
+
+p.padding /*change this to change the paragraph padding. this will affect every <p> */
+{
+padding:15px 20px;
+}
+
+/*code for header1 and header2.*/
+h1{font-size:20px;
+  font-family:"Modern No.20";
+  }
+
+h2{font-size:16px;
+  font-family:"Modern No.20";
+  }
+/*end code for header1 and header2.*/
+  
+  
+.space
+{
+padding:15px;
+}
+
+/*code for the quote on the index page.*/
+blockquote.style5 {
+  font: 16px/22px normal "Courier New";
+  padding-left: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  color: black;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin: 2px;
+  background-image: url(./img/openquote5.gif);
+  background-position: middle left;
+  background-repeat: no-repeat;
+  text-indent: 10px;
+  }
+  blockquote.style5 div {
+    padding-right: 50px;
+    display: block;
+    background-image: url(./img/closequote5.gif);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}  
+/* end code for quote on the index page.*/
+
+
+/*code  to align the footer left or right*/
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+	padding-right:100px;
+}
+/*end code  to align the footer left or right*/
