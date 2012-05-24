@@ -17,12 +17,31 @@ background-attachment:fixed;
 background-position:center;
 }
 
+a:link {color:black;}   
+a:visited {color:black;}
 
+.pad
+{
+margin-bottom:5px !important;
+}
 
+ul.arrow
+{list-style-image: url("./img/arrow.jpg");
+}
+
+ul ul.arrow
+{list-style-image: url("./img/arrow.jpg");
+
+}
+
+/*p.arrowPad
+{padding-bottom:2px;
+}*/
 
 h1{Black;}
 .black{color:black;text-decoration: underline;}
 
+a img { border: none; }
 
 #header{
     width:350px;
@@ -50,11 +69,18 @@ h1{Black;}
 	height:1300px;
 	float:left;
 	word-wrap:break-word;
-        margin-bottom: 0px;
+    margin-bottom: 0px;
 	}
+#rightResume{background-color:white;
+	width:750px;
+	height:800px;
+	float:left;
+	word-wrap:break-word;
+    margin-bottom: 0px;
+	}	
 #rightcontact{background-color:white;
 	width:750px;
-	height:520px;
+	height:570px;
 	float:left;
 	word-wrap:break-word;
         margin-bottom: 0px;
@@ -75,11 +101,97 @@ h1{Black;}
 	}
 #rightthank{background-color:white;
 	width:750px;
-	height:570px;
+	height:650px;
 	float:left;
 	word-wrap:break-word;
         margin-bottom: 0px;
 	}
+	
+#blank{background-color:transparent;
+	width:750px;
+	height:200px;
+}	
+
+#displayContainer{background-color:transparent;
+	padding-left:20px;
+	padding-top:20px;
+	width:750px;
+	height:400px;
+	float:left;
+}
+	
+#resumeObjectives{background-color:transparent;
+		padding-left:42px;
+        width:191px;
+        height:79px;
+		float:left;
+        }
+		
+#displayObjective{
+        width:720px;
+        height:200px;
+		float:left;
+		display: none;
+        }	
+		
+#resumeSkills{background-color:transparent;
+		padding-left:42px;
+        width:191px;
+        height:79px;
+		float:left;
+        }		
+	
+#displaySkills{
+        width:720px;
+        height:200px;
+		float:left;
+		display: none;
+        }
+
+#resumeExperience{background-color:transparent;
+		padding-left:42px;
+        width:191px;
+        height:79px;
+		float:left;
+        }		
+	
+#displayExperience{
+        width:720px;
+        height:200px;
+		float:left;
+		display: none;
+        }
+
+#resumeEducation{background-color:transparent;
+		padding-left:155px;
+		padding-top:20px;
+        width:191px;
+        height:79px;
+		float:left;
+        }		
+	
+#displayEducation{
+        width:720px;
+        height:200px;
+		float:left;
+		display: none;
+        }	
+		
+#resumeExtraC{background-color:transparent;
+		padding-left:50px;
+		padding-top:20px;
+        width:191px;
+        height:79px;
+		float:left;
+        }		
+	
+#displayExtraC{
+        width:720px;
+        height:200px;
+		float:left;
+		display: none;
+        }			
+	
 div.cornersDown{
         background: url(./img/cornersDown.png); /*change this image to display a dfferent picture on the bottom of the body */
         background-color: transparent;
@@ -99,6 +211,8 @@ div.cornersUp{
         height: 45px;
         }
 
+		
+		
 #footleft{
 	width:750px;
 	float:left;          
@@ -185,7 +299,18 @@ padding: 0 10px;
 
 p.padding /*change this to change the paragraph padding. this will affect every <p> */
 {
-padding:15px 20px;
+margin-left:10px;
+margin-right:10px;
+padding:15px 10px;
+font-family:"Courier New";
+}
+
+p.space /*change this to change the paragraph padding. this will affect every <p> */
+{
+margin-left:10px;
+margin-right:10x;
+padding:10px;
+font-family:"Courier New";
 }
 
 /*code for header1 and header2.*/
@@ -199,10 +324,7 @@ h2{font-size:16px;
 /*end code for header1 and header2.*/
   
   
-.space
-{
-padding:15px;
-}
+
 
 /*code for the quote on the index page.*/
 blockquote.style5 {

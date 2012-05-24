@@ -10,7 +10,7 @@
 <script src="js/slideout.js"></script> <!--this is the link for the resume slideout javascript -->
 <script type="text/javascript" src="js/dropdown.js"></script> <!--this is the link for the dropdown menu javascript -->
 <link rel="stylesheet" href="styles.css" type="text/css"  /> <!--this is the code that links a css page to an html page -->
-
+<script src="js/clock.js"></script> <!--this is the code that handles the clock -->
 
 
 <title>Sam vedamanikam E-portfolio</title>
@@ -32,6 +32,9 @@
 
 <!--start dropdown menu-->
 <div id="left">
+
+
+
 <ul id="sddm">
     <li><a href="#" 
         onmouseover="mopen('m1')" 
@@ -53,9 +56,9 @@
         </div>
     </li>
     <li><a href="#" 
-        onmouseover="mopen('m3')" 
+        onmouseover="mopen('m4')" 
         onmouseout="mclosetime()">Contact</a> <!--main display on DropDown menu-->
-        <div id="m3" 
+        <div id="m4" 
             onmouseover="mcancelclosetime()" 
             onmouseout="mclosetime()">
         <a href="./contact.html">-Contact Me</a> <!--list item when mouse hovers over. change href to reflect-->
@@ -86,17 +89,18 @@
 
 <font face="Courier New" >
 
-<p class="padding"> <IMG SRC="./img/computer.jpg " ALT="pictureof my comp" ALIGN=LEFT></p> <p class="padding"> &nbsp;&nbsp;&nbsp; Though I am a networking emphasis, my schools (and personal projects) have prepared me in various programming aspects of my Computer Science field. The following are the  programming languages I have learned and have been using over the years: Java, C#, HTML/CSS, .NET, and SQL.</p>
+<p class="padding"> <IMG SRC="./img/computer.jpg " ALT="pictureof my comp" ALIGN=LEFT></p> <p class="padding">Though I am a networking emphasis, my schools (and personal projects) have prepared me in various programming aspects of my Computer Science field. 
+The following are the  programming languages I have learned and have been using over the years: Java, C#, HTML/CSS, javascript, and SQL.</p>
 
-<p class="padding"> <IMG SRC="./img/imagine.jpg " ALT="pictureof imaginecup" ALIGN=right></p> <p class="padding"> &nbsp;&nbsp;&nbsp; During my senior year at Mary Hardin-Baylor, I participated in the Microsoft Imagine cup with a group of three other students. </p>
+<p class="padding"> <IMG SRC="./img/imagine.jpg " ALT="pictureof imaginecup" ALIGN=right></p> <p class="padding">During my senior year at Mary Hardin-Baylor, I participated in the Microsoft Imagine cup with a group of three other students. </p>
 
-<p class="padding">We designed an application that would help infant mortality by tracking and planning the child's medical life through a calendar by tying the child's mother to a medical professional. During this project, I used C# and ASP.NET to make the web application, and SQL server to store the medical information. </p> 
+<p class="space">We designed an application that would help infant mortality by tracking and planning the child's medical life through a calendar by tying the child's mother to a medical professional. During this project, I used C# and ASP.NET to make the web application, and SQL server to store the medical information. </p> 
 
-<p class="padding">This important project not only tought me about great team work practices, but it also taught me about the extensive work it takes to make a full working system. Below is a video of our group and the system we developed. </p>
+<p class="space">This important project not only tought me about great team work practices, but it also taught me about the extensive work it takes to make a full working system. Below is a video of our group and the system we developed. </p>
 
 <p class="padding"> <iframe width="420" height="315" src="http://www.youtube.com/embed/xnCooTGPODE" frameborder="0" allowfullscreen></iframe> </p>
 
-<p class="padding"> &nbsp;&nbsp;&nbsp; One of my most recent projects was to create a firewall in a Linux environment with iptables. This project taught me about various Linux code, firewall implementation, and the many testing procedures to make a full proof firewall. </p>
+<p class="space">One of my most recent projects was to create a firewall in a Linux environment with iptables. This project taught me about various Linux code, firewall implementation, and the many testing procedures to make a full proof firewall. </p>
 
 
 </font>
@@ -106,7 +110,7 @@
 
 <font face="Courier New" >
 
-<p class="padding"> <IMG SRC="./img/intramural.jpg " ALT="pictureof my comp" ALIGN=LEFT></p> <p class="padding"> &nbsp;&nbsp;&nbsp; So other than my various computer projects I have done in my college life, I have accomplished a few things outside of the class. During my junior year at Sam Houston State University (transferred for two semesters) I won two championships with my team, The Inferno!  </p>
+<p class="padding"> <IMG SRC="./img/intramural.jpg " ALT="pictureof my comp" ALIGN=LEFT></p> <p class="padding">So other than my various computer projects I have done in my college life, I have accomplished a few things outside of the class. During my junior year at Sam Houston State University (transferred for two semesters) I won two championships with my team, The Inferno!  </p>
 
 <p class="padding">Other than soccer, the same team and I competed in a number of sports including football, baseball, kickball, and volleyball.  </p>
 
@@ -131,10 +135,10 @@
 	<div class="footer">
 	
                 <!-- below is the code for the right side of the footer. -->
-    		<p class="alignleft">Copyright (c) 2011 <br/>   Created by Sam Vedamanikam</p>   
+    		<p id = "currentTime"></p> <p class="alignleft">Copyright &copy; 2011 <br/>   Created by Sam Vedamanikam</p>   
 
 				<!--  below is the code for the left side of the footer. Change these links to whatever page you want it to link to. or delete it. -->
-    		<p class="alignright"><u>Connect</u>  <br/>  <a href="http://www.ralphgrenader.webs.com" ><img src="./img/RGNlink.jpg"  border="0"></a> <a href="http://www.facebook.com/Ralph.Gre.Nader" ><img src="./img/facebook_button.png"  border="0"></a> </p> 
+    		<p class="alignright"><u>Connect</u>  <br/>  <a href="http://www.ralphgrenader.webs.com" ><img src="./img/RGNlink.jpg"  border="0" ></a> <a href="http://www.facebook.com/Ralph.Gre.Nader" ><img src="./img/facebook_button.png"  border="0" ></a><a href="https://github.com/RalphGreNader" ><img src="./img/github.jpg"  border="0"></a> </p> 
 			
 			<div style="clear: both;"></div><!-- do not delete this, yo-->
 	</div>
@@ -148,7 +152,7 @@
 	    <a class="handle" href="http://ralphgrenader.webs.com">Download Resume </a>
 	    <p>Click below to download my resume.</p>
 	    <center><p>
-            <a href="./doc/SamResumeForIT01-15-2012.pdf" target="_blank">Download HERE</a> <!--this line changes the PDF file on the slideout. if you change this href, make sure you change it on the other pages. -->
+            <a href="./doc/SamResumeForIT01-15-2012.pdf" target="_blank"  >Download HERE</a> <!--this line changes the PDF file on the slideout.  -->
             </p></center>
         </div>
 <!--end of the HTML stuff needed for the slide out -->

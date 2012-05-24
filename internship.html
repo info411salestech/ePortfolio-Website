@@ -12,7 +12,7 @@
 <script src="js/slideout.js"></script> <!--this is the link for the resume slideout javascript -->
 <script type="text/javascript" src="js/dropdown.js"></script> <!--this is the link for the dropdown menu javascript -->
 <link rel="stylesheet" href="styles.css" type="text/css"  /> <!--this is the code that links a css page to an html page -->
-
+<script src="js/clock.js"></script><!--this is the code that handles the clock -->
 
 
 <title>Sam vedamanikam E-portfolio</title>
@@ -31,6 +31,9 @@
 
 <!--start dropdown menu-->
 <div id="left">
+
+
+
 <ul id="sddm">
     <li><a href="#" 
         onmouseover="mopen('m1')" 
@@ -52,9 +55,9 @@
         </div>
     </li>
     <li><a href="#" 
-        onmouseover="mopen('m3')" 
+        onmouseover="mopen('m4')" 
         onmouseout="mclosetime()">Contact</a> <!--main display on DropDown menu-->
-        <div id="m3" 
+        <div id="m4" 
             onmouseover="mcancelclosetime()" 
             onmouseout="mclosetime()">
         <a href="./contact.html">-Contact Me</a> <!--list item when mouse hovers over. change href to reflect-->
@@ -83,21 +86,22 @@
 
 
 
-<font face="Courier New" >
-<p class="padding"> <IMG SRC="./img/glo.jpg" ALT="pictureof a glo" ALIGN=LEFT></p> <p> &nbsp;&nbsp;&nbsp; I worked for the Texas General Land Office during the summers of 2009, and 2010. In my time there, I learned a lot of valuable knowledge that not only helped me in the business world, but also in my school life. </p>
 
-<p class="padding"> &nbsp;&nbsp;&nbsp;In 2009, I worked for the Information Systems division working with teams to help in many areas of system design and the testing of various applications.</p> 
+<p class="padding"> <IMG SRC="./img/glo.jpg" ALT="pictureof a glo" ALIGN=LEFT></p> <p class="space"> I worked for the Texas General Land Office during the summers of 2009 and 2010.
+ In my time there, I learned a lot of valuable knowledge that not only helped me in the business world, but also in my school life. </p>
+
+<p class="space">In 2009, I worked for the Information Systems division working with teams to help in many areas of system design and the testing of various applications.</p> 
 
 <p class="padding"> <IMG SRC="./img/glo2.jpg" ALT="pictureof a glo2" ALIGN=right></p>  
 
-<p class="padding"> &nbsp;&nbsp;&nbsp; During my second time around at the Land Office, I changed divisions to Professional Services working with Technical Support.</p>
+<p class="space"> During my second time around at the Land Office, I changed divisions to Professional Services working with Technical Support.</p>
 
-<p class="padding"> In Professional Services, I was part of a couple of big projects. The first project dealt with consolidating thousands of the agencies images, and sending them to online cloud storage. </p>
+<p class="space"> In Professional Services, I was part of a couple of big projects. The first project dealt with consolidating thousands of the agencies images, and sending them to online cloud storage. </p>
 
-<p class="padding"> The second major project dealt with database consistency. I was part of a team who eliminated hundreds of customer entry duplicates within the Permit Tracking System (off-shore dock tracking system). This helped the system give accurate information about customers and their payment history. </p>
+<p class="space"> The second major project dealt with database consistency. I was part of a team who eliminated hundreds of customer entry duplicates within the Permit Tracking System (off-shore dock tracking system). This helped the system give accurate information about customers and their payment history. </p>
 
-<p class="padding"> Check out my résumé for more information by clicking on the box to the left of your screen. </p>
-</font> 
+<p class="space"> Check out my résumé for more information by clicking on the box to the left of your screen. </p>
+
 
 
 
@@ -122,14 +126,15 @@
 	<div class="footer">
 	
                 <!-- below is the code for the right side of the footer. -->
-    		<p class="alignleft">Copyright (c) 2011 <br/>   Created by Sam Vedamanikam</p>   
+    		<p id = "currentTime"></p> <p class="alignleft">Copyright &copy; 2011 <br/>   Created by Sam Vedamanikam</p>   
 
 				<!--  below is the code for the left side of the footer. Change these links to whatever page you want it to link to. or delete it. -->
-    		<p class="alignright"><u>Connect</u>  <br/>  <a href="http://www.ralphgrenader.webs.com" ><img src="./img/RGNlink.jpg"  border="0"></a> <a href="http://www.facebook.com/Ralph.Gre.Nader" ><img src="./img/facebook_button.png"  border="0"></a> </p> 
+    		<p class="alignright"><u>Connect</u>  <br/>  <a href="http://www.ralphgrenader.webs.com" ><img src="./img/RGNlink.jpg"  border="0" ></a> <a href="http://www.facebook.com/Ralph.Gre.Nader" ><img src="./img/facebook_button.png"  border="0" ></a><a href="https://github.com/RalphGreNader" ><img src="./img/github.jpg"  border="0"></a> </p> 
 			
 			<div style="clear: both;"></div><!-- do not delete this, yo-->
 	</div>
 </div>
+
 
 
 
@@ -138,7 +143,7 @@
 	    <a class="handle" href="http://ralphgrenader.webs.com">Download Resume </a>
 	    <p>Click below to download my resume.</p>
 	    <center><p>
-            <a href="./doc/SamResumeForIT01-15-2012.pdf" target="_blank">Download HERE</a> <!--this line changes the PDF file on the slideout. if you change this href, make sure you change it on the other pages. -->
+            <a href="./doc/SamResumeForIT01-15-2012.pdf" target="_blank"  >Download HERE</a> <!--this line changes the PDF file on the slideout.  -->
             </p></center>
         </div>
 <!--end of the HTML stuff needed for the slide out -->

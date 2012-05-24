@@ -10,7 +10,7 @@
 <script src="js/slideout.js"></script> <!--this is the link for the resume slideout javascript -->
 <script type="text/javascript" src="js/dropdown.js"></script> <!--this is the link for the dropdown menu javascript -->
 <link rel="stylesheet" href="styles.css" type="text/css"  /> <!--this is the code that links a css page to an html page -->
-
+<script src="js/projectPage.js" type="text/javascript"></script> <!--this is the code that handles the clock -->
 
 
 <title>Sam vedamanikam E-portfolio</title>
@@ -32,6 +32,9 @@
 
 <!--start dropdown menu-->
 <div id="left">
+
+
+
 <ul id="sddm">
     <li><a href="#" 
         onmouseover="mopen('m1')" 
@@ -53,9 +56,9 @@
         </div>
     </li>
     <li><a href="#" 
-        onmouseover="mopen('m3')" 
+        onmouseover="mopen('m4')" 
         onmouseout="mclosetime()">Contact</a> <!--main display on DropDown menu-->
-        <div id="m3" 
+        <div id="m4" 
             onmouseover="mcancelclosetime()" 
             onmouseout="mclosetime()">
         <a href="./contact.html">-Contact Me</a> <!--list item when mouse hovers over. change href to reflect-->
@@ -83,21 +86,20 @@
 			<p><h1> &nbsp;&nbsp;&nbsp; Personal projects </h1></p> 
 
 
-<font face="Courier New" >
 
-<p class="padding"> &nbsp;&nbsp;&nbsp;Technology is an ever changing environment. I try and create personal projects to keep me up to date with the latest trends and to further my experience beyond the classroom. I found that some of these projects have given me an advantage during various college classes, as well as during my internships. Here are some of my more successful endeavors.</p>
 
-<p class="padding"> &nbsp;&nbsp;&nbsp; One of my earliest projects was during my senior year in high school. Though I do not have many of my high school projects and achievements on my resume or on this site, I felt that I should include the following project because it's what got me into networking in the first place. 
+<p class="space">Technology is an ever changing environment. I try and create personal projects to keep me up to date with the latest trends and to further my experience beyond the classroom. I found that some of these projects have given me an advantage during various college classes, as well as during my internships. Here are some of my more successful endeavors.</p>
 
-<p class="padding"> <IMG SRC="./img/network.jpg" ALT="pictureof lab" ALIGN=right></p>  <p class="padding">  A small group of students and I set up a computer network for the A+ class tech lab. This project included assembling each computer, installing the required software, connecting the computers to routers, and troubleshooting problems if needed. </p>
+<p class="space"> One of my earliest projects was during my senior year in high school. Though I do not have many of my high school projects and achievements on my resume or on this site, I felt that I should include the following project because it's what got me into networking in the first place. 
 
-<p class="padding"> <IMG SRC="./img/donate.jpg" ALT="pictureof donations" ALIGN=LEFT></p>  <p class="padding"> &nbsp;&nbsp;&nbsp; This next project I started in 2010 during summer. I had a number of older computer parts that I didn't have use for, so instead of recycling, or selling them, I decided to make computers that I could donate to the less fortunate. My ultimate goal was to send these computers overseas, but after getting guidance, I decided there were a lot of children in the Austin area that needed computers, so this was a perfect place to start. I ended up donating close to four computers to abuse victim children, and sold at least two computers to raise money for a starting church in India. </p>
+<p class="padding"> <IMG SRC="./img/network.jpg" ALIGN=right></p>  <p class="padding">  A small group of students and I set up a computer network for the A+ class tech lab. This project included assembling each computer, installing the required software, connecting the computers to routers, and troubleshooting problems if needed. </p>
 
-<p class="padding"> <IMG SRC="./img/company.png" ALT="pictureof my co" ALIGN=RIGHT></p>  <p class="padding"> &nbsp;&nbsp;&nbsp; With my knowledge of making personal computers and donating a number of computers the year before, I decided to start a small computer refurbish company in the summer of 2011.   </p>
+<p class="padding"> <img id="imgDisplay" name="imgDisplay" src="./img/A.jpg" ALIGN=LEFT></p>  <p class="padding"> This next project I started in 2010 during summer. I had a number of older computer parts that I didn't have use for, so instead of recycling, or selling them, I decided to make computers that I could donate to the less fortunate. My ultimate goal was to send these computers overseas, but after getting guidance, I decided there were a lot of children in the Austin area that needed computers, so this was a perfect place to start. I ended up donating close to four computers to abuse victim children, and sold at least two computers to raise money for a starting church in India. </p>
 
-<p class="padding"> <IMG SRC="./img/card.png" ALT="pictureof my card" ALIGN=LEFT></p> <p class="padding"> This refurbish company was started because I was taking summer classes, and decided not to pursue an internship because of it. I quickly learned that starting a company (even as small as mine) was not an easy task to achieve. I found that competing with local companies and other people selling their computers on Craigslist was going to be difficult because of their low prices. So I decided to expand my small company by adding computer repair. This was a great way to expand my customer base, while increasing my profit. The computer repair side of my company is still alive with the help of repeat customers who are happy with my service.
+<p class="padding"> <IMG SRC="./img/card.png" ALIGN=RIGHT></p>  <p class="padding"> With my knowledge of making personal computers and donating a number of computers the year before, I decided to start a small computer refurbish company in the summer of 2011.   </p>
 
-</font>
+<p class="space">This refurbish company was started because I was taking summer classes, and decided not to pursue an internship because of it. I quickly learned that starting a company (even as small as mine) was not an easy task to achieve. I found that competing with local companies and other people selling their computers on Craigslist was going to be difficult because of their low prices. So I decided to expand my small company by adding computer repair. This was a great way to expand my customer base, while increasing my profit. The computer repair side of my company is still alive with the help of repeat customers who are happy with my service.
+
 
 
 
@@ -123,14 +125,15 @@
 	<div class="footer">
 	
                 <!-- below is the code for the right side of the footer. -->
-    		<p class="alignleft">Copyright (c) 2011 <br/>   Created by Sam Vedamanikam</p>   
+    		<p id = "currentTime"></p> <p class="alignleft">Copyright &copy; 2011 <br/>   Created by Sam Vedamanikam</p>   
 
 				<!--  below is the code for the left side of the footer. Change these links to whatever page you want it to link to. or delete it. -->
-    		<p class="alignright"><u>Connect</u>  <br/>  <a href="http://www.ralphgrenader.webs.com" ><img src="./img/RGNlink.jpg"  border="0"></a> <a href="http://www.facebook.com/Ralph.Gre.Nader" ><img src="./img/facebook_button.png"  border="0"></a> </p> 
+    		<p class="alignright"><u>Connect</u>  <br/>  <a href="http://www.ralphgrenader.webs.com" ><img src="./img/RGNlink.jpg"  border="0" ></a> <a href="http://www.facebook.com/Ralph.Gre.Nader" ><img src="./img/facebook_button.png"  border="0" ></a><a href="https://github.com/RalphGreNader" ><img src="./img/github.jpg"  border="0"></a> </p> 
 			
 			<div style="clear: both;"></div><!-- do not delete this, yo-->
 	</div>
 </div>
+
 
 
 
@@ -139,7 +142,7 @@
 	    <a class="handle" href="http://ralphgrenader.webs.com">Download Resume </a>
 	    <p>Click below to download my resume.</p>
 	    <center><p>
-            <a href="./doc/SamResumeForIT01-15-2012.pdf" target="_blank">Download HERE</a> <!--this line changes the PDF file on the slideout. if you change this href, make sure you change it on the other pages. -->
+            <a href="./doc/SamResumeForIT01-15-2012.pdf" target="_blank"  >Download HERE</a> <!--this line changes the PDF file on the slideout.  -->
             </p></center>
         </div>
 <!--end of the HTML stuff needed for the slide out -->

@@ -10,7 +10,7 @@
 <script src="js/slideout.js"></script> <!--this is the link for the resume slideout javascript -->
 <script type="text/javascript" src="js/dropdown.js"></script> <!--this is the link for the dropdown menu javascript -->
 <link rel="stylesheet" href="styles.css" type="text/css"  /> <!--this is the code that links a css page to an html page -->
-
+<script src="js/clock.js"></script><!--this is the code that handles the clock -->
 
 <title>Sam vedamanikam E-portfolio</title>
 
@@ -28,6 +28,9 @@
 
 <!--start dropdown menu-->
 <div id="left">
+
+
+
 <ul id="sddm">
     <li><a href="#" 
         onmouseover="mopen('m1')" 
@@ -49,9 +52,9 @@
         </div>
     </li>
     <li><a href="#" 
-        onmouseover="mopen('m3')" 
+        onmouseover="mopen('m4')" 
         onmouseout="mclosetime()">Contact</a> <!--main display on DropDown menu-->
-        <div id="m3" 
+        <div id="m4" 
             onmouseover="mcancelclosetime()" 
             onmouseout="mclosetime()">
         <a href="./contact.html">-Contact Me</a> <!--list item when mouse hovers over. change href to reflect-->
@@ -101,10 +104,10 @@
 	<div class="footer">
 	
                 <!-- below is the code for the right side of the footer. -->
-    		<p class="alignleft">Copyright (c) 2011 <br/>   Created by Sam Vedamanikam</p>   
+    		<p id = "currentTime"></p> <p class="alignleft">Copyright &copy; 2011 <br/>   Created by Sam Vedamanikam</p>   
 
 				<!--  below is the code for the left side of the footer. Change these links to whatever page you want it to link to. or delete it. -->
-    		<p class="alignright"><u>Connect</u>  <br/>  <a href="http://www.ralphgrenader.webs.com" ><img src="./img/RGNlink.jpg"  border="0"></a> <a href="http://www.facebook.com/Ralph.Gre.Nader" ><img src="./img/facebook_button.png"  border="0"></a> </p> 
+    		<p class="alignright"><u>Connect</u>  <br/>  <a href="http://www.ralphgrenader.webs.com" ><img src="./img/RGNlink.jpg"  border="0" ></a> <a href="http://www.facebook.com/Ralph.Gre.Nader" ><img src="./img/facebook_button.png"  border="0" ></a><a href="https://github.com/RalphGreNader" ><img src="./img/github.jpg"  border="0"></a> </p> 
 			
 			<div style="clear: both;"></div><!-- do not delete this, yo-->
 	</div>
@@ -118,7 +121,7 @@
 	    <a class="handle" href="http://ralphgrenader.webs.com">Download Resume </a>
 	    <p>Click below to download my resume.</p>
 	    <center><p>
-            <a href="./doc/SamResumeForIT01-15-2012.pdf" target="_blank">Download HERE</a> <!--this line changes the PDF file on the slideout. if you change this href, make sure you change it on the other pages. -->
+            <a href="./doc/SamResumeForIT01-15-2012.pdf" target="_blank"  >Download HERE</a> <!--this line changes the PDF file on the slideout.  -->
             </p></center>
         </div>
 <!--end of the HTML stuff needed for the slide out -->
